@@ -1,0 +1,26 @@
+﻿@model List<Site>
+
+<h2>All Sites:</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Site ID</th>
+            <th>Site Address</th>
+            <th>Latitude</th>
+            <th>Longitude</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var site in Model)
+        {
+            <tr>
+                <td>@site.SiteId</td>
+                <td>@site.SiteAddress</td>
+                <td>@site.Latitude</td>
+                <td>@site.Longitude</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
